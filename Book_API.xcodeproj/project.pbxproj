@@ -14,6 +14,12 @@
 		B5350B8D2AEFC1F200849A53 /* Book_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350B8C2AEFC1F200849A53 /* Book_APITests.swift */; };
 		B5350B972AEFC1F200849A53 /* Book_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350B962AEFC1F200849A53 /* Book_APIUITests.swift */; };
 		B5350B992AEFC1F200849A53 /* Book_APIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350B982AEFC1F200849A53 /* Book_APIUITestsLaunchTests.swift */; };
+		B5350BA72AEFC22600849A53 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B5350BA62AEFC22600849A53 /* SDWebImageSwiftUI */; };
+		B5350BAA2AEFC23900849A53 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B5350BA92AEFC23900849A53 /* SwiftyJSON */; };
+		B5350BAD2AF0013400849A53 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350BAC2AF0013400849A53 /* Book.swift */; };
+		B5350BAF2AF0015C00849A53 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350BAE2AF0015C00849A53 /* BookDetailView.swift */; };
+		B5350BB12AF0018500849A53 /* GetDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350BB02AF0018500849A53 /* GetDataModel.swift */; };
+		B5350BB52AF006F900849A53 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5350BB42AF006F900849A53 /* UserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,11 @@
 		B5350B922AEFC1F200849A53 /* Book_APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Book_APIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5350B962AEFC1F200849A53 /* Book_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_APIUITests.swift; sourceTree = "<group>"; };
 		B5350B982AEFC1F200849A53 /* Book_APIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_APIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5350BAB2AEFD75500849A53 /* Book-API-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Book-API-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B5350BAC2AF0013400849A53 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		B5350BAE2AF0015C00849A53 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		B5350BB02AF0018500849A53 /* GetDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataModel.swift; sourceTree = "<group>"; };
+		B5350BB42AF006F900849A53 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5350BAA2AEFC23900849A53 /* SwiftyJSON in Frameworks */,
+				B5350BA72AEFC22600849A53 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,10 @@
 		B5350B6F2AEFC1F100849A53 = {
 			isa = PBXGroup;
 			children = (
+				B5350BB42AF006F900849A53 /* UserDefaultsManager.swift */,
+				B5350BB02AF0018500849A53 /* GetDataModel.swift */,
+				B5350BAE2AF0015C00849A53 /* BookDetailView.swift */,
+				B5350BAC2AF0013400849A53 /* Book.swift */,
 				B5350B7A2AEFC1F100849A53 /* Book_API */,
 				B5350B8B2AEFC1F200849A53 /* Book_APITests */,
 				B5350B952AEFC1F200849A53 /* Book_APIUITests */,
@@ -94,6 +111,7 @@
 		B5350B7A2AEFC1F100849A53 /* Book_API */ = {
 			isa = PBXGroup;
 			children = (
+				B5350BAB2AEFD75500849A53 /* Book-API-Info.plist */,
 				B5350B7B2AEFC1F100849A53 /* Book_APIApp.swift */,
 				B5350B7D2AEFC1F100849A53 /* ContentView.swift */,
 				B5350B7F2AEFC1F200849A53 /* Assets.xcassets */,
@@ -143,6 +161,10 @@
 			dependencies = (
 			);
 			name = Book_API;
+			packageProductDependencies = (
+				B5350BA62AEFC22600849A53 /* SDWebImageSwiftUI */,
+				B5350BA92AEFC23900849A53 /* SwiftyJSON */,
+			);
 			productName = Book_API;
 			productReference = B5350B782AEFC1F100849A53 /* Book_API.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,10 @@
 				Base,
 			);
 			mainGroup = B5350B6F2AEFC1F100849A53;
+			packageReferences = (
+				B5350BA52AEFC22600849A53 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				B5350BA82AEFC23900849A53 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = B5350B792AEFC1F100849A53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5350BAF2AF0015C00849A53 /* BookDetailView.swift in Sources */,
 				B5350B7E2AEFC1F100849A53 /* ContentView.swift in Sources */,
 				B5350B7C2AEFC1F100849A53 /* Book_APIApp.swift in Sources */,
+				B5350BB52AF006F900849A53 /* UserDefaultsManager.swift in Sources */,
+				B5350BB12AF0018500849A53 /* GetDataModel.swift in Sources */,
+				B5350BAD2AF0013400849A53 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +454,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Book_API/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Book-API-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +483,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Book_API/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Book-API-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -582,6 +614,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5350BA52AEFC22600849A53 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
+		B5350BA82AEFC23900849A53 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5350BA62AEFC22600849A53 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5350BA52AEFC22600849A53 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		B5350BA92AEFC23900849A53 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5350BA82AEFC23900849A53 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5350B702AEFC1F100849A53 /* Project object */;
 }
